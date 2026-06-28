@@ -1,0 +1,24 @@
+{
+  "name": "eduquest-root",
+  "version": "1.0.0",
+  "description": "EduQuest - A Gamified Browser-Based Learning Realm",
+  "private": true,
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix client --legacy-peer-deps",
+    "server": "npm run start --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "client:build": "npm run build --prefix client",
+    "build": "npm run client:build"
+  },
+  "keywords": [
+    "education",
+    "gamification",
+    "react",
+    "express",
+    "groq",
+    "ai"
+  ],
+  "author": "EduQuest Team",
+  "license": "MIT"
+}

@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+server/.env
+server/.env.local
+server/.env.*.local
+client/.env
+client/.env.local
+client/.env.*.local
+
+# Build output
+dist/
+build/
+server/dist/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/

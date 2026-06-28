@@ -1,0 +1,22 @@
+{
+  "dashboard": {
+    "welcome": "Greetings, {{username}}!",
+    "streak": "Daily Streak",
+    "days": "days",
+    "total_xp": "Total XP",
+    "xp": "XP",
+    "level_up": "Level up: {{xp}} XP to go",
+    "subject_quest": "Subject Quest Lines",
+    "complete_easy": "Complete Easy levels to unlock Medium campaigns"
+  },
+  "common": {
+    "loading": "Loading...",
+    "retry": "Retry",
+    "close": "Close",
+    "start": "Start Quest",
+    "language": "Language",
+    "english": "English",
+    "spanish": "Spanish",
+    "hindi": "Hindi"
+  }
+}
