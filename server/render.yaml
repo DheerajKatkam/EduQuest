@@ -14,4 +14,8 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: GROQ_API_KEY
+        value: ""
+        sync: false
+      - key: DATABASE_URL
+        value: ""
         sync: false
