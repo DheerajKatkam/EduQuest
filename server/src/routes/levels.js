@@ -25,7 +25,7 @@ router.get('/subjects', authenticateToken, async (req, res) => {
         `SELECT count(up.id) as count 
          FROM user_progress up 
          JOIN levels l ON up.level_id = l.id 
-         WHERE up.user_id = ? AND l.subject_id = ? AND up.completed = 1`,
+         WHERE up.user_id = ? AND l.subject_id = ? AND up.completed = true`,
         [userId, sub.id]
       );
       const completedLevels = parseInt(completedLevelsRes[0].count);
@@ -166,7 +166,7 @@ router.post('/levels/:levelId/complete', authenticateToken, async (req, res) => 
     } else {
       // Record new completion
       await query(
-        'INSERT INTO user_progress (user_id, level_id, completed, xp_earned) VALUES (?, ?, 1, ?)',
+        'INSERT INTO user_progress (user_id, level_id, completed, xp_earned) VALUES (?, ?, true, ?)',
         [userId, levelId, xpReward]
       );
     }
